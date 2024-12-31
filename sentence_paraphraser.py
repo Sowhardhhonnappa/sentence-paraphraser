@@ -88,11 +88,9 @@ else:
     model = pegasus_model
 
 try:
-    # Input sentence
     sentence = input("\nEnter a sentence to paraphrase: ")
     paraphrased_sentence = paraphrase(sentence, model, tokenizer)
 
-    # Display the result
     print("\nParaphrased Sentence:")
     print(paraphrased_sentence)
 except ValueError as ve:
